@@ -1,5 +1,4 @@
 	module test_vedic_8;
-
 	reg [7:0] a;
 	reg [7:0] b;
 	wire [15:0] c;
@@ -31,9 +30,5 @@
 		a = 8'd6;
 		b = 8'd8;
 		#100;
-        
-		
-
-	end
-      
+	end     
 endmodule
