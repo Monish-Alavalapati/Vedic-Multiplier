@@ -43,10 +43,23 @@ To use the Vedic Multiplier module in your Verilog designs, follow these steps:
 
 Refer to the inline comments within the `vedic_multiplier.v` file for detailed usage instructions.
 
+##Simulation
+
+Simulate the Vedic Multiplier using a Verilog simulator (e.g., ModelSim, VCS, etc.).
+
+```bash
+# Example command using ModelSim
+vsim -do "do sim.do"
+```
+##Synthesis
+
+Synthesize the design for your target FPGA or ASIC using your preferred synthesis tool
+
+```bash
+# Example command using Xilinx Vivado
+vivado -mode batch -source synth.tcl
+```
+
 ## Contributions
 
 Contributions to this project are welcome. If you find any issues or have suggestions for improvement, feel free to open an issue or submit a pull request.
-
-## License
-
-This project is licensed under the [MIT License](LICENSE). Please review the `LICENSE` file for more details.
