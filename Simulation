@@ -1,3 +1,0 @@
-```bash
-# Example command using ModelSim
-vsim -do sim.do
