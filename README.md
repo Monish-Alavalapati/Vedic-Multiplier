@@ -2,36 +2,51 @@
 
 This repository contains the Verilog implementation of a Vedic Multiplier.
 
-## Overview
+## Vedic Multiplier
 
-A Vedic Multiplier is a type of multiplier based on ancient Indian mathematics principles known as Vedic Mathematics. It is known for its efficiency and simplicity compared to traditional multiplication methods.
+A Vedic Multiplier is a high-speed multiplication circuit based on ancient Indian Vedic mathematics techniques. It offers advantages such as simplicity, low latency, and high throughput.
 
-## Features
+### Uses of Vedic Multiplier
 
-- Implemented in synthesizable Verilog
-- Follows the Vedic Mathematics principles for multiplication
-- Suitable for FPGA and ASIC implementations
+- **Speed**: Vedic Multipliers perform multiplication at a faster rate compared to conventional multipliers, thanks to parallel processing techniques.
 
-## What is a Vedic Multiplier?
+- **Low Power Consumption**: Vedic Multipliers achieve low power consumption due to their simplified structure and efficient resource utilization. This makes them suitable for power-constrained applications like mobile devices.
 
-The Vedic Multiplier is designed based on Vedic Mathematics, an ancient system of mathematical calculations. Unlike conventional multiplication algorithms, the Vedic Multiplier breaks down the multiplication process into smaller, simpler steps, making it more efficient in terms of speed and resource utilization.
+- **Area Efficiency**: Vedic Multipliers have a compact circuit structure, enabling better area utilization. This is valuable in integrated circuits where space optimization is critical.
 
-### Key Advantages:
+- **Modularity**: Vedic Multipliers can be easily scaled and combined with other modules to build more complex arithmetic units, e.g., multiply-accumulate (MAC) units.
 
-1. **Simplicity:** The Vedic Multiplier uses simple and intuitive techniques that reduce the complexity of the multiplication process.
+## Code Implementation
 
-2. **Parallelism:** It inherently supports parallelism, enabling faster multiplication by processing multiple bits simultaneously.
+The Verilog code for the Vedic Multiplier is available in the `vedic_multiplier.v` file in this repository.
 
-3. **Efficiency:** The algorithm is designed to optimize the usage of hardware resources, making it suitable for FPGA and ASIC implementations.
+To use the Vedic Multiplier module in your Verilog designs, follow these steps:
 
-## Getting Started
+1. Clone or download this repository.
 
-### Prerequisites
+2. Open your Verilog project or editor.
 
-Make sure you have a Verilog simulator or a synthesis tool compatible with your target hardware.
+3. Include the `vedic_multiplier.v` file into your project hierarchy.
 
-### Clone the Repository
+4. Instantiate the `vedic_multiplier` module in your code by providing appropriate input and output signals.
 
-```bash
-git clone https://github.com/your-username/Vedic-Multiplier.git
-cd Vedic-Multiplier
+    ```verilog
+    // Example instantiation
+    vedic_multiplier vm(
+        .a(a_input),
+        .b(b_input),
+        .product(product_output)
+    );
+    ```
+
+5. Connect your input and output signals (`a_input`, `b_input`, and `product_output`) to the corresponding signals in your design.
+
+Refer to the inline comments within the `vedic_multiplier.v` file for detailed usage instructions.
+
+## Contributions
+
+Contributions to this project are welcome. If you find any issues or have suggestions for improvement, feel free to open an issue or submit a pull request.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE). Please review the `LICENSE` file for more details.
