@@ -117,13 +117,3 @@ add_12_bit z7(temp4,q5,q6);
 assign c[3:0]=q0[3:0];
 assign c[15:4]=q6[11:0];
 endmodule
-
-
-module test_vedic_8;
-
-	reg [7:0] a;
-	reg [7:0] b;
-
-	wire [15:0] c;
-
-
