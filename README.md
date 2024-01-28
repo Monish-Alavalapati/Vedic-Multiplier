@@ -35,7 +35,3 @@ Make sure you have a Verilog simulator or a synthesis tool compatible with your 
 ```bash
 git clone https://github.com/your-username/Vedic-Multiplier.git
 cd Vedic-Multiplier
-# Example command using ModelSim(for simulation)
-vsim -do sim.do
-# Example command using Xilinx Vivado(for synthesis)
-vivado -mode batch -source synth.tcl
